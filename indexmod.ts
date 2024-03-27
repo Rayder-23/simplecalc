@@ -12,8 +12,8 @@ const answer = await inquirer.prompt([
     name: "operator",
     choices: ["Addition", "Subtraction", "Multiplication", "Division"],
   },
-  { message: "Enter First Number.", type: "number", name: "num1" },
-  { message: "Enter Second Number.", type: "number", name: "num2" },
+  { message: "Enter your First Number.", type: "number", name: "num1" },
+  { message: "Enter your Second Number.", type: "number", name: "num2" },
 ]);
 
 if (answer.operator === "Addition") {
@@ -31,3 +31,5 @@ if (answer.operator === "Addition") {
  else {
   console.log("Please select a valid operator.");
 }
+
+console.log("End of Program, to use again, retype the npx command.")
